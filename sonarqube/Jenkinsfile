@@ -1,5 +1,5 @@
 node {
-    def myGradleContainer = docker.image('gradle:openj9')
+    def myGradleContainer = docker.image('frekele/gradle:4.8-jdk8')
     myGradleContainer.pull()
 
     stage('prep') {
