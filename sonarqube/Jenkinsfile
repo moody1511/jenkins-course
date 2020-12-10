@@ -1,5 +1,5 @@
 node {
-    def myGradleContainer = docker.image('renovate/gradle:6.7')
+    def myGradleContainer = docker.image('amd64/gradle:jre8-openj9')
     myGradleContainer.pull()
 
     stage('prep') {
