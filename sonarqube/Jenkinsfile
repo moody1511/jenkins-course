@@ -1,5 +1,5 @@
 node {
-    def myGradleContainer = docker.image('ringcentral/gradle:6.5.1')
+    def myGradleContainer = docker.image('gradle:alpine')
     myGradleContainer.pull()
 
     stage('prep') {
