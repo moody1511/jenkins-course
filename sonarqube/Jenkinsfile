@@ -1,5 +1,5 @@
 node {
-    def myGradleContainer = docker.image('moody1511/gradlemoody:1')
+    def myGradleContainer = docker.image('ringcentral/gradle:6.5.1')
     myGradleContainer.pull()
 
     stage('prep') {
